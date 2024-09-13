@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup de Facturación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img src="img/images.png" width="100" height="100" alt="">
+        <h1>Datos del Cliente</h1>
+        <div class="cliente-info">
+            <p><strong>Nombre:</strong> Juan Carlos Mejias</p>
+            <p><strong>Dirección:</strong> Guemes-Palermo</p>
+            <p><strong>Zona:</strong> Zona 1</p>
+        </div>
+
+        <h2>Servicios Contratados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Costo Base</th>
+                    <th>Promociones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Servicio A</td>
+                    <td>Mensual</td>
+                    <td>$50</td>
+                    <td>10% de descuento</td>
+                </tr>
+                <tr>
+                    <td>Servicio B</td>
+                    <td>Anual</td>
+                    <td>$200</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Detalle de Costos</h2>
+        <div class="costos">
+            <p><strong>Costo Total:</strong> $250</p>
+            <p><strong>Descuento:</strong> $5</p>
+            <p><strong>Total Facturado:</strong> $245</p>
+        </div>
+
+        <button onclick="descargarPDF()">Descargar Factura en PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
